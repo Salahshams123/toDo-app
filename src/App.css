@@ -1,0 +1,211 @@
+.header1{
+  text-align: center;
+  margin-bottom: 0;
+}
+.header1 h1{
+  color: white;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.parent{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+
+.left{
+  margin: 50px;
+  min-height: 700px;
+  width:calc(100%/2);
+  border-right: 1px solid red;
+  margin-right: -50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(4, 26, 49);
+  border-radius: 20px;
+  
+}
+
+ .cardWraper{
+ margin-bottom: 20px;
+ width: calc(100% - 30px);
+ padding: 10px;
+padding-left: 20px;
+ position: relative;
+ display: flex;
+ gap: 20px;
+ border-bottom: 2px dashed rgb(45, 32, 32);
+ }
+ .cardWraper .ri{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  width: 100%;
+ }
+ .cardWraper .ri .butons{
+  display: flex;
+  gap: 20%;
+  flex: 3;
+  text-align: right;
+ }
+ .cardWraper .ri .butons .tog{
+  background-color: rgb(56, 131, 222);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ .cardWraper .ri .butons .del{
+  background-color: rgb(230, 24, 76);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+ .cardWraper .ri .butons .ico{
+  background-color: rgb(9, 23, 33);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+ 
+ }
+ .cardWraper .ri .butons button:hover{
+ transform: rotate(360deg);
+ transition: 0.1s;
+}
+ .cardWraper .ri .bh{
+  /* text-decoration: line-through; */
+ flex: 1;
+  margin-right: 20%;
+  background-color: rgb(8, 78, 152);
+      color: rgb(248, 241, 252);
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 1px 2px rgb(249, 246, 249);
+      position: relative;
+      margin-left: 10px;
+  }
+  .cardWraper .ri .bh::before{
+    content: "N";
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+    left: -15px;
+    top: 3px;
+    background-color: rgb(239, 43, 43);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .cardWraper .ri .ah{
+    flex: 1;
+    margin-right: 20%;
+    background-color: rgb(8, 78, 152);
+        color: rgb(248, 241, 252);
+        border-radius: 5px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 1px 2px rgb(249, 246, 249);
+        position: relative;
+      margin-left: 10px;
+    }
+    .cardWraper .ri .ah::before{
+      content: "Y";
+      position: absolute;
+      width: 15px;
+      height: 20px;
+      border-radius: 50%;
+      left: -15px;
+      top: 3px;
+      background-color: rgb(42, 228, 13);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .right{
+      border-left: 1px solid red;
+      margin: 50px;
+    min-height: 700px;
+    width:calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 31, 54);
+    color: rgb(20, 2, 2);
+    border-radius: 10px;
+    }
+    .right .mp{
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      border-bottom: 1px dashed red;
+    }
+    .right .mp input{
+      padding: 5px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid rgb(226, 226, 172);
+    }
+    .right button{
+      width: 70px;
+      margin: 0 40px;
+      background-color: rgb(41, 126, 211);
+      color: #eee;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      height: 30px;
+      cursor: pointer;
+    }
+    .right button:hover{
+      background-color: rgb(2, 17, 17);
+    }
+    .right .favorit{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .right .favorit h3{
+      background-color: rgb(87, 160, 234);
+      color: rgb(248, 241, 252);
+      text-shadow: 1px 1px 1px yellow;
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 2px 5px rgba(213, 232, 41, 0.492);
+    }
+    .right .favorit .smallfav{
+      background-color: rgb(87, 160, 234);
+      color: rgb(242, 236, 245);
+      border-radius: 5px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 2px 5px rgb(131, 202, 240);
+    }
+
+    @media screen and (max-width: 800px){
+      
+        .right .mp input{
+          width: 150px;
+        }
+        .right .favorit h3{
+          width: 100%;
+        }
+        .cardWraper .ri .butons{
+          display: block;
+        }
+    }
